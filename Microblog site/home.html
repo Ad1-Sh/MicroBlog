@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Microblog</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <header class="navbar">
         <div class="navbar_brand">
-        <img src="Logo.svg" alt="Microblog Logo" />Microblog
+        <img class="navbar_logo" src="Logo.svg" alt="Microblog Logo" />Microblog
     </div>
     <ul class="navbar_navigation">
         <li class="navbar_nav-item">
@@ -19,7 +20,7 @@
         </li>
     </ul>
     </header>
-    <main>
+    <main class="main">
         <section>
             <h1>Add new entry</h1>
             <form class="form" action="/entry" method="POST">
@@ -44,6 +45,23 @@
             </article>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer_content">
+            <section class="left">
+                <a class="footer_item">Made by Aditya</a>
+                <a class="footer_item">Check out some of my other projects</a>
+            </section>
+            <section class="right">
+                <div class="footer_column">
+                    <a class="footer_item">Recent</a>
+                <a class="footer_item">Calendar</a>
+                </div>
+                <div class="footer_column">
+                    <a class="footer_item">About</a>
+                <a class="footer_item">How this was made</a>
+                </div>
+            </section>
+        </div>
+    </footer>
 </body>
 </html>
