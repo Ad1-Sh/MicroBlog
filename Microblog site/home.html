@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microblog</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar_brand">
+        <img src="Logo.svg" alt="Microblog Logo" />Microblog
+    </div>
+    <ul class="navbar_navigation">
+        <li class="navbar_nav-item">
+            <a href="#" class="navbar_link">Recent</a>
+        </li>
+        <li class="navbar_nav-item">
+            <a href="#" class="navbar_link">Calendar</a>
+        </li>
+    </ul>
+    </header>
+    <main>
+        <section>
+            <h1>Add new entry</h1>
+            <form class="form" action="/entry" method="POST">
+                <p class="form_input">
+<label class="form_label" for="entry">Entry contents</label>
+<textarea class="form_textarea" name="content" i="entry"></textarea>
+</p>
+<button class="form_submit" type="submit">Add entry</button>
+            </form>
+        </section>
+        <section>
+            <h1>Recent posts</h1>
+            <article>
+                <div>
+                    <h2> A bit of a chill day today
+                    </h2>
+                    <time datetime="25-3-2025">March 25</time>
+                </div>
+                <p>
+ Today I made a Microblog Site using HTML, CSS and Flask!
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
