@@ -25,21 +25,21 @@
             <h1>Add new entry</h1>
             <form class="form" action="/entry" method="POST">
                 <p class="form_input">
-<label class="form_label" for="entry">Entry contents</label>
-<textarea class="form_textarea" name="content" i="entry"></textarea>
+<!-- <label class="form_label" for="entry">Entry contents</label> -->
+<textarea class="form_textarea" name="content" id="entry" aria-label="Entry contents"></textarea>
 </p>
 <button class="form_submit" type="submit">Add entry</button>
             </form>
         </section>
         <section>
             <h1>Recent posts</h1>
-            <article>
+            <article class="entry">
                 <div>
-                    <h2> A bit of a chill day today
+                    <h2 class="entry_title"> A bit of a chill day today
                     </h2>
-                    <time datetime="25-3-2025">March 25</time>
+                    <time class="entry_date" datetime="25-3-2025">• March 25</time>
                 </div>
-                <p>
+                <p class="entry_content">
  Today I made a Microblog Site using HTML, CSS and Flask!
                 </p>
             </article>
